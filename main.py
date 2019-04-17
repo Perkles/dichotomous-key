@@ -7,10 +7,13 @@
 import csv
 
 class dichotomous_key(object):
-	def __init__(self, argument = None, instruction = None, animal = None):
+	def __init__(self, index = None, argument = None, instruction = None, animal = None, level = None, display = []):
+		self.index = index
 		self.argument = argument
 		self.instruction = instruction
 		self.animal = animal
+		self.level = level
+		self.display = []
 
 	def load(self, file_name):
 		with open(file_name + '.txt') as csv_file:
@@ -19,14 +22,35 @@ class dichotomous_key(object):
 			for row in csv_reader:
 				if line_count == 0:
 					print(row)
+					self.add_to_display(row)
 					line_count += 1
 				else:
-					print(row)
+					self.add_to_display(row)
 					line_count += 1
-			print('------- Finished')
+
+	def execute(self):
+		level = 0
+		while (level != (len(self.display))):
+			print(level, ' - ' , self.display[level], '\n')
+			choice = int(input("digite algo: "))
+			level += 1
+
+
+	def getChoices(self):
+		# print(self.display)
+		return self.display
+
+	def add_to_display(self, row):
+		if (len(row) == 4):
+			self.display.append([row[0],row[1],row[2],row[3]])
+		else:
+			self.display.append([row[0],row[1],row[2]])
+
 
 d_key = dichotomous_key()
 d_key.load('six_legs_well_dev_wings')
+d_key.getChoices()
+d_key.execute()
 
 # d = dichotomous_key(1, 'One pair of wings go to 2' , 'Hind wings reduced to tiny knobs (halteres), tip of abdomen without 2-3 thread-like tails')
 # d.a = dichotomous_key(2, 'asdasdsa' , 'asdasd')
