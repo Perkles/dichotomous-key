@@ -1,0 +1,34 @@
+1a,One pair of wings. . . . . . . . . . go to 2, sakjdkjas
+1b,Two pairs of wings. . . . . . . . . . go to 3
+2a,Hind wings reduced to tiny knobs (halteres) tip of abdomen without 2-3 thread-like tails
+2b,Hind wings not reduced to tiny knobs tip of abdomen with 2-3 thread-like tails (caudal filaments)
+3a,Front and hind wings have similar texture. . . . . . . . . . go to 4
+3b,Front wings a rigid or leathery covering for clear hind wings. . . . . . . . . . go to 14
+4a,Wings covered with powdery scales mouthparts usually a coiled tube (proboscis) for sucking
+4b,Wings not covered with powdery scales mouthparts not a coiled tube. . . . . . . . . . go to 5
+5a,Wings slope downwards (rooflike) from the center at rest. . . . . . . . . go to 6
+5b,Wings not held rooflike at rest. . . . . . . . . . go to 9
+6a,Wings covered with hair
+6b,Hairless wings. . . . . . . . . . go to 7
+7a,Sucking mouthparts in the form of a rigid beak often short and bristley antennae body may look like a thorn
+7b,Mouthparts not in the form of a rigid beak antennae not short and bristley body never looks like a thorn. . . . . . . . . . go to 8
+8a,Wings with many cross veins
+8b,Wings without many cross veins
+9a,Front and hind wings similar in size and shape. . . . . . . . . . . go to 10
+9b,Front and hind wings not similar in size and shape. . . . . . . . . .go to 12
+10a,Antennae always short and bristley
+10b,Antennae never short and bristley. . . . . . . . . . go to 11
+11a,Wings held flat over abdomen when at rest last abdominal segment not enlarged usually found in colonies
+11b,Wings not held flat over abdomen when at rest males with the last abdominal segment enlarged like a scorpion's stinger and held over the bod not found in colonies
+12a,Body very soft without a narrow "waist". . . . . . . . . . go to 13
+12b,Body not exceptionally soft often with a narrow "waist"
+13a,Hind wings wider than front wings folded underneath like a fan
+13b,Hind wings much smaller than front wings not folded underneath like a fan
+14a,Sucking mouthparts in the form of a rigid beak front wings with clear tips (hemelytra) overlapping at rest revealing a triangular panel on the back (scutellum)
+14b,Chewing mouthparts front wings without clear tips. . . . . . . . . . go to 15
+15a,Rigid front wings (elytra) meet in a straight line down the middle of the back
+15b,Front wings not as above. . . . . . . . . . go to 16
+16a,Head visible from above. . . . . . . . . . go to 17
+16b,Head hidden from above by a hoodlike structure (pronotum)
+17a,Front legs strong with prominent spines for grasping prey hind legs long and slender
+17b,Front legs without spines or with weak spines the femora of the hind legs are enlarged for jumping
