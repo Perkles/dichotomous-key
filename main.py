@@ -21,7 +21,6 @@ class dichotomous_key(object):
 			line_count = 0
 			for row in csv_reader:
 				if line_count == 0:
-					print(row)
 					self.add_to_display(row)
 					line_count += 1
 				else:
@@ -29,15 +28,20 @@ class dichotomous_key(object):
 					line_count += 1
 
 	def execute(self):
-		level = 0
+
+		level = 1
 		while (level != (len(self.display))):
+			print('got')
+			# shesaid = list(filter(lambda x: x == "1", self.display))
+			shesaid = map(self.index_match(self.display, level), self.display)
+			print(shesaid)
+			print('it')
 			print(level, ' - ' , self.display[level], '\n')
 			choice = int(input("digite algo: "))
 			level += 1
 
 
 	def getChoices(self):
-		# print(self.display)
 		return self.display
 
 	def add_to_display(self, row):
@@ -46,10 +50,20 @@ class dichotomous_key(object):
 		else:
 			self.display.append([row[0],row[1],row[2]])
 
+	def index_match(self, row, index):
+		print("sdjagdjagdadas")
+		print(row[index][0] == "1b")
+
+		print(str(index))
+		if (row[index][0] == str(index) + "a") or (row[index][0] == str(index) + "b"):
+			return row
+		else:
+			return False
+
 
 d_key = dichotomous_key()
 d_key.load('six_legs_well_dev_wings')
-d_key.getChoices()
+# d_key.getChoices()
 d_key.execute()
 
 # d = dichotomous_key(1, 'One pair of wings go to 2' , 'Hind wings reduced to tiny knobs (halteres), tip of abdomen without 2-3 thread-like tails')
