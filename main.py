@@ -7,13 +7,9 @@
 import csv
 
 class dichotomous_key(object):
-	def __init__(self, index = None, argument = None, instruction = None, animal = None, level = None, display = []):
-		self.index = index
-		self.argument = argument
-		self.instruction = instruction
-		self.animal = animal
-		self.level = level
-		self.display = []
+	def __init__(self, name = None, display = []):
+		self.name = name
+		self.nodes = []
 
 	def load(self, file_name):
 		with open(file_name + '.txt') as csv_file:
@@ -26,45 +22,26 @@ class dichotomous_key(object):
 				else:
 					self.add_to_display(row)
 					line_count += 1
-
-	def execute(self):
-
-		level = 1
-		while (level != (len(self.display))):
-			print('got')
-			# shesaid = list(filter(lambda x: x == "1", self.display))
-			shesaid = map(self.index_match(self.display, level), self.display)
-			print(shesaid)
-			print('it')
-			print(level, ' - ' , self.display[level], '\n')
-			choice = int(input("digite algo: "))
-			level += 1
-
-
-	def getChoices(self):
-		return self.display
-
+		
 	def add_to_display(self, row):
 		if (len(row) == 4):
-			self.display.append([row[0],row[1],row[2],row[3]])
+			self.nodes.append([row[0],row[1],row[2],row[3]])
 		else:
-			self.display.append([row[0],row[1],row[2]])
+			self.nodes.append([row[0],row[1],row[2]])
 
-	def index_match(self, row, index):
-		print("sdjagdjagdadas")
-		print(row[index][0] == "1b")
-
-		print(str(index))
-		if (row[index][0] == str(index) + "a") or (row[index][0] == str(index) + "b"):
-			return row
-		else:
-			return False
-
-
+class Node(object):
+	def __init__(self, level = None ,argument = None ,instruction = None ,animal = None ):
+		self.level = level
+		self.argument = argument
+		self.instruction = instruction
+		self.animal = animal
+		
 d_key = dichotomous_key()
 d_key.load('six_legs_well_dev_wings')
-# d_key.getChoices()
-d_key.execute()
+print(d_key.nodes[0])
+
+
+
 
 # d = dichotomous_key(1, 'One pair of wings go to 2' , 'Hind wings reduced to tiny knobs (halteres), tip of abdomen without 2-3 thread-like tails')
 # d.a = dichotomous_key(2, 'asdasdsa' , 'asdasd')
