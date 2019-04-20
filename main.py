@@ -1,15 +1,12 @@
-# class dichotomous_key(object):
-# 	def __init__(self, level, argument_a, argument_b ):
-# 		self.level = level
-# 		self.a = {str(self.level) + 'a' : argument_a}
-# 		self.b = {str(self.level) + 'b' : argument_b}
-
 import csv
-
-class dichotomous_key(object):
-	def __init__(self, name = None, display = []):
-		self.name = name
-		self.nodes = []
+my_key = []
+class Dichotomous_key(object):
+	def __init__(self, level = None ,argument = None ,instruction = None ,animal = None, pointer = 1):
+		self.level = level
+		self.argument = argument
+		self.instruction = instruction
+		self.animal = animal
+		self.pointer = pointer
 
 	def load(self, file_name):
 		with open(file_name + '.txt') as csv_file:
@@ -17,36 +14,42 @@ class dichotomous_key(object):
 			line_count = 0
 			for row in csv_reader:
 				if line_count == 0:
-					self.add_to_display(row)
+					self.unpack_list(row)
 					line_count += 1
 				else:
-					self.add_to_display(row)
+					self.unpack_list(row)
 					line_count += 1
 		
-	def add_to_display(self, row):
+	def unpack_list(self, row):
 		if (len(row) == 4):
-			self.nodes.append([row[0],row[1],row[2],row[3]])
+			level, argument, instruction, animal = row
+			return my_key.append(Dichotomous_key(level,argument,instruction,animal))
 		else:
-			self.nodes.append([row[0],row[1],row[2]])
+			level, argument, instruction = row
+			return my_key.append(Dichotomous_key(level,argument,instruction))
+	
+	def key(self, key):
+		for iten in key:
+			if (iten.level == str(self.pointer) + 'a') or (iten.level == str(self.pointer) + 'b'):
+				print(iten.level + ' : ' + iten.argument)
+		self.decision(input())
 
-class Node(object):
-	def __init__(self, level = None ,argument = None ,instruction = None ,animal = None ):
-		self.level = level
-		self.argument = argument
-		self.instruction = instruction
-		self.animal = animal
-		
-d_key = dichotomous_key()
+
+	def decision(self, decision):
+		if (decision == 'a'):
+#			print(my_key[self.pointer -1 ].argument)
+			self.pointer = int(my_key[self.pointer -1 ].instruction)
+		elif(decision == 'b'):
+#			print(my_key[self.pointer].argument)
+			self.pointer = int(my_key[self.pointer].instruction)
+		self.pointer += 1
+		self.key(my_key)	
+
+
+d_key = Dichotomous_key()
 d_key.load('six_legs_well_dev_wings')
-print(d_key.nodes[0])
+d_key.key(my_key)
 
-
-
-
-# d = dichotomous_key(1, 'One pair of wings go to 2' , 'Hind wings reduced to tiny knobs (halteres), tip of abdomen without 2-3 thread-like tails')
-# d.a = dichotomous_key(2, 'asdasdsa' , 'asdasd')
-# print(d)
-# print(d.a.a)
 
 
 # 17 levels 
