@@ -1,7 +1,10 @@
 import csv
+
 my_key = []
-class Dichotomous_key(object):
-	def __init__(self, level = None ,argument = None ,instruction = None ,animal = None, pointer = 1):
+
+
+class DichotomousKey(object):
+	def __init__(self, level=None, argument=None, instruction=None, animal=None, pointer=1):
 		self.level = level
 		self.argument = argument
 		self.instruction = instruction
@@ -19,40 +22,37 @@ class Dichotomous_key(object):
 				else:
 					self.unpack_list(row)
 					line_count += 1
-		
+
 	def unpack_list(self, row):
-		if (len(row) == 4):
+		if len(row) == 4:
 			level, argument, instruction, animal = row
-			return my_key.append(Dichotomous_key(level,argument,instruction,animal))
+			return my_key.append(DichotomousKey(level, argument, instruction, animal))
 		else:
 			level, argument, instruction = row
-			return my_key.append(Dichotomous_key(level,argument,instruction))
-	
-	def key(self, key):
-		for iten in key:
-			if (iten.level == str(self.pointer) + 'a') or (iten.level == str(self.pointer) + 'b'):
-				print(iten.level + ' : ' + iten.argument)
-		self.decision(input())
+			return my_key.append(DichotomousKey(level, argument, instruction))
 
+	'''
+
+	def key(self, key):
+		for item in key:
+			if (item.level == str(self.pointer)) or (item.level == str(self.pointer)):
+				print(item.level + ' : ' + item.argument)
+		decision = self.decision(input())
 
 	def decision(self, decision):
-		if (decision == 'a'):
-#			print(my_key[self.pointer -1 ].argument)
-			self.pointer = int(my_key[self.pointer -1 ].instruction)
-		elif(decision == 'b'):
-#			print(my_key[self.pointer].argument)
+		if decision == 'a':
+			self.pointer = int(my_key[self.pointer].instruction)
+		elif decision == 'b':
 			self.pointer = int(my_key[self.pointer].instruction)
 		self.pointer += 1
-		self.key(my_key)	
+		self.key(my_key)
 
-
-d_key = Dichotomous_key()
+	'''
+d_key = DichotomousKey()
 d_key.load('six_legs_well_dev_wings')
-d_key.key(my_key)
+#d_key.key(my_key)
 
-
-
-# 17 levels 
+# 17 levels
 
 # 2a	-	1a / DIPTERA
 

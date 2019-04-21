@@ -1,34 +1,34 @@
-1a,One pair of wings,2
-1b,Two pairs of wings,3
-2a,Hind wings reduced to tiny knobs (halteres) tip of abdomen without 2-3 thread-like tails,0,DIPTERA 
-2b,Hind wings not reduced to tiny knobs tip of abdomen with 2-3 thread-like tails (caudal filaments),0,EPHEMEROPTERA
-3a,Front and hind wings have similar texture,4
-3b,Front wings a rigid or leathery covering for clear hind wings,14
-4a,Wings covered with powdery scales mouthparts usually a coiled tube (proboscis) for sucking,0,LEPIDOPTERA
-4b,Wings not covered with powdery scales mouthparts not a coiled tube,5
-5a,Wings slope downwards (rooflike) from the center at rest,6
-5b,Wings not held rooflike at rest,9
-6a,Wings covered with hair,0,TRICHOPTERA
-6b,Hairless wings,7
-7a,Sucking mouthparts in the form of a rigid beak often short and bristley antennae body may look like a thorn,0,HOMOPTERA
-7b,Mouthparts not in the form of a rigid beak antennae not short and bristley body never looks like a thorn,8
-8a,Wings with many cross veins,0,NEUROPTERA
-8b,Wings without many cross veins,0,PSOCOPTERA
-9a,Front and hind wings similar in size and shape,10
-9b,Front and hind wings not similar in size and shape,12
-10a,Antennae always short and bristley,0,ODONATA 
-10b,Antennae never short and bristley,11
-11a,Wings held flat over abdomen when at rest last abdominal segment not enlarged usually found in colonies,0,ISOPTERA
-11b,Wings not held flat over abdomen when at rest males with the last abdominal segment enlarged like a scorpion's stinger and held over the bod not found in colonies,0,MECOPTERA
-12a,Body very soft without a narrow "waist",13
-12b,Body not exceptionally soft often with a narrow "waist",0,HYMENOPTERA
-13a,Hind wings wider than front wings folded underneath like a fan,0,PLECOPTERA
-13b,Hind wings much smaller than front wings not folded underneath like a fan,0,EPHEMEROPTERA
-14a,Sucking mouthparts in the form of a rigid beak front wings with clear tips (hemelytra) overlapping at rest revealing a triangular panel on the back (scutellum),0,HETEROPTERA
-14b,Chewing mouthparts front wings without clear tips,15
-15a,Rigid front wings (elytra) meet in a straight line down the middle of the back,0,COLEOPTERA
-15b,Front wings not as above,16
-16a,Head visible from above,17
-16b,Head hidden from above by a hoodlike structure (pronotum),0,BLATTARIA
-17a,Front legs strong with prominent spines for grasping prey hind legs long and slender,0,MANTODEA
-17b,Front legs without spines or with weak spines the femora of the hind legs are enlarged for jumping,0,ORTHOPTERA
+1,One pair of wings,2
+1,Two pairs of wings,3
+2,Hind wings reduced to tiny knobs (halteres) tip of abdomen without 2-3 thread-like tails,0,DIPTERA
+2,Hind wings not reduced to tiny knobs tip of abdomen with 2-3 thread-like tails (caudal filaments),0,EPHEMEROPTERA
+3,Front and hind wings have similar texture,4
+3,Front wings a rigid or leathery covering for clear hind wings,14
+4,Wings covered with powdery scales mouthparts usually a coiled tube (proboscis) for sucking,0,LEPIDOPTERA
+4,Wings not covered with powdery scales mouthparts not a coiled tube,5
+5,Wings slope downwards (rooflike) from the center at rest,6
+5,Wings not held rooflike at rest,9
+6,Wings covered with hair,0,TRICHOPTERA
+6,Hairless wings,7
+7,Sucking mouthparts in the form of a rigid beak often short and bristley antennae body may look like a thorn,0,HOMOPTERA
+7,Mouthparts not in the form of a rigid beak antennae not short and bristley body never looks like a thorn,8
+8,Wings with many cross veins,0,NEUROPTERA
+8,Wings without many cross veins,0,PSOCOPTERA
+9,Front and hind wings similar in size and shape,10
+9,Front and hind wings not similar in size and shape,12
+10,Antennae always short and bristley,0,ODONATA
+10,Antennae never short and bristley,11
+11,Wings held flat over abdomen when at rest last abdominal segment not enlarged usually found in colonies,0,ISOPTERA
+11,Wings not held flat over abdomen when at rest males with the last abdominal segment enlarged like a scorpion's stinger and held over the bod not found in colonies,0,MECOPTERA
+12,Body very soft without a narrow "waist",13
+12,Body not exceptionally soft often with a narrow "waist",0,HYMENOPTERA
+13,Hind wings wider than front wings folded underneath like a fan,0,PLECOPTERA
+13,Hind wings much smaller than front wings not folded underneath like a fan,0,EPHEMEROPTERA
+14,Sucking mouthparts in the form of a rigid beak front wings with clear tips (hemelytra) overlapping at rest revealing a triangular panel on the back (scutellum),0,HETEROPTERA
+14,Chewing mouthparts front wings without clear tips,15
+15,Rigid front wings (elytra) meet in a straight line down the middle of the back,0,COLEOPTERA
+15,Front wings not as above,16
+16,Head visible from above,17
+16,Head hidden from above by a hoodlike structure (pronotum),0,BLATTARIA
+17,Front legs strong with prominent spines for grasping prey hind legs long and slender,0,MANTODEA
+17,Front legs without spines or with weak spines the femora of the hind legs are enlarged for jumping,0,ORTHOPTERA
