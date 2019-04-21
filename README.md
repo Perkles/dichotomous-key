@@ -9,7 +9,7 @@ This script implements a Dichotomous key in python based on a key called:
 [Arthropods - Key A: Arthropods with Six Legs, with Well Developed Wings](https://www.amnh.org/learn/biodiversity_counts/ident_help/Text_Keys/arthropod_keyA.htm) provided
 by the [American Museum of Natural History website](https://www.amnh.org/)
 
-The algorithm is projected to reed a CSV file (Comma separated value) where the key is written and execute the dichotomous key's steps.
+The algorithm is projected to read a CSV file (Comma separated value) where the key is written and execute the dichotomous key's steps.
 
 In order to reproduce the algorithm in your computer, you'll need to download this repository and execute the `DichotomousKey.py`
 To customize the key modify the `d_key.load()` function to receive a string with the name of your CSV without the '.txt' part.
