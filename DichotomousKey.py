@@ -31,10 +31,15 @@ class DichotomousKey(object):
 		print(self.steps[level + 1].level + 'b : ' + self.steps[level + 1].argument)
 		choice = str(input('(a/b) > '))
 		if choice == 'a':
-			self.execute(self.steps[level].get_list_index(self.steps[level].goto))
+			if self.steps[level].has_animal():
+				print("Your animal is: %s" %(self.steps[level].animal))
+			else:
+				self.execute(self.steps[level].get_list_index(self.steps[level].goto))
 		elif choice == 'b':
-			self.execute(self.steps[level+1].get_list_index(self.steps[level+1].goto))
-
+			if self.steps[level+1].has_animal():
+				print("Your animal is: %s" %(self.steps[level+1].animal))
+			else:
+				self.execute(self.steps[level+1].get_list_index(self.steps[level+1].goto))
 
 class Step(object):
 	def __init__(self, level=None, argument=None, goto=None, animal=None):
@@ -48,9 +53,6 @@ class Step(object):
 			return True
 
 	def get_list_index(self, goto):
-		if int(goto) == 2:
-			return (int(goto) * 2) - 1
-		else:
 			return (int(goto) * 2) - 2
 
 d_key = DichotomousKey()

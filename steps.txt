@@ -1,0 +1,35 @@
+ 17 levels
+
+# 2a	-	1a / DIPTERA
+
+# 2b	-	1a / EPHEMEROPTERA
+
+# 4a	-	3a	-	3a	-	1b / LEPIDOPTERA
+
+# 14a	-	3b	-	3b	-	1b / HETEROPTERA
+
+# 15a	-	14b	-	14b	-	3b	-	3b	-	1b / COLEOPTERA
+
+# 6a	-	5a	-	5a	-	4b	-	4b	-	3a	-	3a	-	1b / TRICHOPTERA
+
+# 16b	-	15b	-	15b	-	14b	-	14b	-	3b	-	3b	-	14b / BLATTARIA
+
+# 10a	-	9a	-	9a -	5b	-	5b	-	4b	-	4b	-	3a	-	3a	-	1b / ODONATA 
+
+# 7a	-	6b	-	6b	-	5a	-	5a	-	4b	-	4b	-	3a	-	3a	-	1b / HOMOPTERA
+
+# 12b	-	9b	-	9b	-	5b	-	5b	-	4b	-	4b	-	3a	-	3a	-	1b / HYMENOPTERA
+
+# 17a	-	16a	-	16a	-	15b	-	15b	-	14b	-	14b	-	3b	-	3b	-	1b / MANTODEA
+
+# 17b	-	16a	-	16a	-	15b	-	15b	-	14b	-	14b	-	3b	-	3b	-	1b / ORTHOPTERA
+
+# 8a	-	7b	-	7b	-	6b	-	6b	-	5a	-	5a	-	4b	-	4b	-	3a	-	3a	-	1b / NEUROPTERA
+
+# 8b	-	7b	-	7b	-	6b	-	6b	-	5a	-	5a	-	4b	-	4b	-	3a	-	3a	-	1b / PSOCOPTERA
+
+# 11a	-	10b	-	10b	-	9a	-	9a	-	5b	-	5b	-	4b	-	4b	-	3a	-	3a	-	1b / ISOPTERA
+
+# 11b	-	10b	-	10b	-	9a	-	9a	-	5b	-	5b	-	4b	-	4b	-	3a	-	3a	-	1b / MECOPTERA
+
+# 13a	-	12a	-	12a	-	9b	-	9b	-	5b	-	5b	-	4b	-	4b	-	3a	-	3a	-	1b / EPHEMEROPTERA
