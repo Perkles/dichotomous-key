@@ -1,10 +1,27 @@
 import csv
 
 class DichotomousKey(object):
-	def __init__(self, name=None, author=None, steps=[]):
+	def __init__(self, name=None, author=None, year=None, steps=[]):
 		self.name = name
 		self.author = author
+		self.year = year
 		self.steps = steps
+
+	def set_name(self):
+		self.name = input("Dichotomous Key name: ")
+
+	def set_year(self):
+		self.year = input("Year of creation: ")
+
+	def set_author(self):
+		self.author = input("Author: ")
+
+	def finalize(self):
+		print("Dichotomous key information")
+		print("Key name: %s" %(self.name))
+		print("Year: %s" %(self.year))
+		print("Author: %s" % (self.author))
+		print("----------------------------")
 
 	def load(self, file_name):
 		with open(file_name + '.txt') as csv_file:
@@ -32,11 +49,13 @@ class DichotomousKey(object):
 		choice = str(input('(a/b) > '))
 		if choice == 'a':
 			if self.steps[level].has_animal():
+				self.finalize()
 				print("Your animal is: %s" %(self.steps[level].animal))
 			else:
 				self.execute(self.steps[level].get_list_index(self.steps[level].goto))
 		elif choice == 'b':
 			if self.steps[level+1].has_animal():
+				self.finalize()
 				print("Your animal is: %s" %(self.steps[level+1].animal))
 			else:
 				self.execute(self.steps[level+1].get_list_index(self.steps[level+1].goto))
@@ -56,5 +75,8 @@ class Step(object):
 			return (int(goto) * 2) - 2
 
 d_key = DichotomousKey()
+d_key.set_name()
+d_key.set_year()
+d_key.set_author()
 d_key.load('six_legs_well_dev_wings')
 d_key.execute(0)
