@@ -27,3 +27,5 @@ The `0` part indicates the end of the key and is required.
 `NEUROPTERA` is the result of the identification.
 
 The file `steps.txt` can be used to check different identifications and test if the dichotomous key works properly.
+
+Next : Implement insect probability count.
